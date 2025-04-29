@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "04d15e66-755f-44eb-a89e-c2a28904bb10",
+		"name": "High Cost Request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30755872",
+		"_collection_link": "https://test-team-7369.postman.co/workspace/Redis-Cache~0bc46ac7-df28-4467-b596-cb370819b390/collection/30755872-04d15e66-755f-44eb-a89e-c2a28904bb10?action=share&source=collection_link&creator=30755872"
+	},
+	"item": [
+		{
+			"name": "High",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/huge?cache=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"huge"
+					],
+					"query": [
+						{
+							"key": "cache",
+							"value": "true",
+							"description": "If false, It will run the query without cache, so it will always take long time."
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
