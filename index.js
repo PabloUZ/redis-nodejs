@@ -117,13 +117,13 @@ const bootstrap = async () => {
 
         const data = await getData();
         await redisClient.set('huge', JSON.stringify(data));
-        await redisClient.expire('huge', 10);
+        await redisClient.expire('huge', 30);
 
         return res.status(200).json(data);
     });
 
     app.listen(3000, () => {
-        console.log('Server is running on port 3000');
+        console.log('Server is running on localhost');
     });
 }
 
